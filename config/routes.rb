@@ -1,6 +1,8 @@
 Colchonet::Application.routes.draw do
-  resources :rooms
-  resources :users
+  scope ":locale" do
+    resources :rooms
+    resources :users
+  end
 
   root 'home#index'
 
