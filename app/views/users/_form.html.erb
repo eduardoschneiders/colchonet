@@ -1,3 +1,9 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <%= t 'general.form_error' %>
+  </div>
+<% end %>
+
 <%= form_for @user do |f| %>
   <p>
   <%= f.label :full_name %> <br />
