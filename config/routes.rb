@@ -1,9 +1,11 @@
 Colchonet::Application.routes.draw do
-  scope ":locale" do
+  LOCALES =  /en|pt\-BR/
+  scope "(:locale)", locale: LOCALES do
     resources :rooms
     resources :users
   end
 
+  get '/:locale' => 'home#index', locale: LOCALES
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
