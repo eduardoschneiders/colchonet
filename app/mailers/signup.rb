@@ -1,4 +1,4 @@
-class SignupMailer < ActionMailer::Base
+class Signup < ActionMailer::Base
   default from: 'no-reply@colchonet.net'
   
   def confirm_email(user)
