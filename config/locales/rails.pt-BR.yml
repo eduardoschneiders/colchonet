@@ -24,6 +24,8 @@ pt-BR:
           sobrando na sua casa e ainda conhecer gente do mundo inteiro.
       confirm_link_html: 'Para você começar a usar o site, acesse o link: %{link}'
       thanks_html: 'Obrigado por se cadastrar no %{link}.'
+  confirmations:
+    success: Email confirmado com sucesso, obrigado!
   links:
     back: Voltar
     show: Visualizar
