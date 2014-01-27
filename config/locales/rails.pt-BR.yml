@@ -9,6 +9,10 @@ pt-BR:
       edit: 'Editar perfil'
       location: "Localização: %{location}"
       bio: "Bio: %{bio}"
+  user_sessions:
+    new:
+      title: Login
+      sign_up: Cadastre-se
   rooms:
     new:
       title: Cadastro
@@ -240,7 +244,17 @@ pt-BR:
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
+      messages:
+        invalid_login: 'Usuário ou senha inválidos'
       <<: *errors
+    attributes:
+      user_session:
+        email: Email
+        password: Senha
+  helpers:
+    submit:
+      user_session:
+        create: Entrar
   activerecord:
     models:
       user: Usuário

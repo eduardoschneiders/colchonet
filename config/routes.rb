@@ -6,6 +6,7 @@ Colchonet::Application.routes.draw do
   end
 
   resource :confirmation, only: [:show]
+  resource :user_sessions, only: [:create, :new, :destroy]
 
   get '/:locale' => 'home#index', locale: LOCALES
   root 'home#index'
