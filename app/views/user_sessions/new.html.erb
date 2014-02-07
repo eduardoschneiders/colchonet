@@ -16,6 +16,7 @@
     <%= f.text_field :password %>
     <%= error_tag @user_session, :password %>
   </p>
+  <p><%= f.submit %></p>
 
   <p><%= link_to t('.sign_up'), new_user_path %></p>
 
