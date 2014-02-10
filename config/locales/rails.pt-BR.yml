@@ -1,4 +1,7 @@
 pt-BR:
+  flash:
+    notice:
+      signed_in: Logado com sucesso
   users:
     new:
       title: Cadastro
