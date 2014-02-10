@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
     if @user_session.authenticate!
       redirect_to root_path, notice: t('flash.notice.signed_in')
     else
-      render new
+      render :new
     end
   end
 
