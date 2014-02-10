@@ -244,6 +244,11 @@ pt-BR:
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
+      models:
+        user_session:
+          attributes:
+            base:
+              invalid_login: "Login inválido"
       messages:
         invalid_login: 'Usuário ou senha inválidos'
       <<: *errors
