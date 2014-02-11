@@ -1,7 +1,11 @@
 pt-BR:
   flash:
+    alert:
+      needs_login: "Você precisa estar logado para continuar"
     notice:
-      signed_in: Logado com sucesso
+      signed_in: 'Login efetuado com sucesso!'
+      signed_out: 'Logout efetuado com sucesso. Até logo!'
+      already_logged_in: "Você já está logado."
   users:
     new:
       title: Cadastro
@@ -38,7 +42,11 @@ pt-BR:
     show: Visualizar
   layout:
     rooms: Quartos
+    new_room: Cadastre seu quarto
     signup: Cadastro
+    signin: Login
+    my_profile: Meu perfil
+    signout: Logout
   general:
     form_error: Há errors no formulário, por favor verifique
   date:
