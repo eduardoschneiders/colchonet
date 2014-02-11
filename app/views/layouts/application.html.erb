@@ -11,7 +11,6 @@
       <header>
         <div id="header-wrap">
           <h1><%= link_to "colcho.net", root_path %> </h1>
-          <% require 'pry'; binding.pry %>
           <% if user_signed_in? %>
             <%= render 'layouts/user_navbar' %>
             <% else %>
