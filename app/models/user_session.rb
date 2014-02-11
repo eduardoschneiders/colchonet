@@ -11,7 +11,6 @@ class UserSession
   end
 
   def authenticate!
-    binding.pry
     user = User.authenticate(@email, @password)
 
     if user.present?
