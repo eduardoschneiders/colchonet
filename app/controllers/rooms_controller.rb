@@ -25,7 +25,7 @@ class RoomsController < ApplicationController
   # POST /rooms
   # POST /rooms.json
   def create
-    @room = Room.new(room_params)
+    @room = current_user.rooms.build(room_params)
 
     if @room.save
       redirect_to @room, notice: t('flash.notice.room_created')
@@ -35,6 +35,7 @@ class RoomsController < ApplicationController
   end
 
   def update
+    @room = current_user.rooms.find(params[:id])
     if @room.update(room_params)
       redirect_to @room, notice: t('flash.notice.room_updated')
     else
