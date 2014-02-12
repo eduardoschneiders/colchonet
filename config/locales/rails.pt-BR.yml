@@ -8,7 +8,8 @@ pt-BR:
       signed_in: 'Login efetuado com sucesso!'
       signed_out: 'Logout efetuado com sucesso. Até logo!'
       already_logged_in: "Você já está logado."
-      room_created:  Quarto Criado
+      room_created:  Quarto criado
+      room_updated: Quarto atualizado
   users:
     new:
       title: Cadastro
@@ -281,6 +282,8 @@ pt-BR:
     submit:
       user_session:
         create: Entrar
+      room:
+        update: Atualizar %{model}
   activerecord:
     models:
       user: Usuário
