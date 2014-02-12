@@ -259,6 +259,7 @@ pt-BR:
         user_session:
           attributes:
             base:
+              user_unconfirmed: "Você deve confirmar o usuário"
               invalid_login: "Login inválido"
       messages:
         invalid_login: 'Usuário ou senha inválidos'
