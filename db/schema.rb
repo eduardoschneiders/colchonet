@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140212195131) do
+ActiveRecord::Schema.define(version: 20140212200246) do
 
   create_table "reviews", force: true do |t|
     t.integer  "user_id"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140212195131) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "reviews_count"
   end
 
   add_index "rooms", ["user_id"], name: "index_rooms_on_user_id"
