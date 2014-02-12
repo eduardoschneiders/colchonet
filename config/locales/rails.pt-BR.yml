@@ -1,4 +1,6 @@
 pt-BR:
+  dialogs:
+    destroy: 'Você tem certeza que deseja remover?'
   flash:
     alert:
       needs_login: "Você precisa estar logado para continuar"
@@ -21,6 +23,12 @@ pt-BR:
       title: Login
       sign_up: Cadastre-se
   rooms:
+    index:
+      title: 'Quartos disponíveis'
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remover'
     new:
       title: Cadastro
     edit:
