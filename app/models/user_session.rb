@@ -16,7 +16,7 @@ class UserSession
     if user.present?
       store(user)
     else
-      errors.add(:base, :user_unconfirmed) unless User.find_by(email: @email).confirmed_at.present?
+      errors.add(:base, :user_unconfirmed) unless User.find_by(email: @email).try(:confirmed_at).present?
       errors.add(:base, :invalid_login)
       false
     end
