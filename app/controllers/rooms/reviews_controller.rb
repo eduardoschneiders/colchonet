@@ -1,0 +1,3 @@
+Rooms::ReviewsController < ApplicationController
+
+end
