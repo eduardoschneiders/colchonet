@@ -11,6 +11,10 @@ class RoomsController < ApplicationController
   # GET /rooms/1.json
   def show
     @room = Room.find(params[:id])
+    if user_signed_in?
+      @user_review = @room.reviews.
+        find_or_initialize_by(user_id: current_user.id)
+    end
   end
 
   # GET /rooms/new
