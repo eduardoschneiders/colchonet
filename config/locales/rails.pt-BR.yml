@@ -31,6 +31,8 @@ pt-BR:
       owner_html: '&mdash; %{owner} (%{when})'
       edit: 'Editar'
       destroy: 'Remover'
+    review:
+      login_to_review: Faça o login para avaliar quartos
     new:
       title: Cadastro
     edit:
