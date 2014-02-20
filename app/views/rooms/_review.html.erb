@@ -1,6 +1,6 @@
 <section class="review">
   <% if user_signed_in? %>
-    <%= form_for [room , room.reviews.new] do |f| %>
+    <%= form_for room.review_route do |f| %>
       <% Review::POINTS.each do |point| %>
         <%= f.radio_button :points, point %>
         <%= f.label :points, point, value: point %>
