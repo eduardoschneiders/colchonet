@@ -8,4 +8,8 @@ class Review < ActiveRecord::Base
   validates_uniqueness_of :room_id, scope: :user_id
 
 	validates_inclusion_of :points, in: POINTS
+
+  def self.stars
+    (average(:points) || 0).round
+  end
 end
