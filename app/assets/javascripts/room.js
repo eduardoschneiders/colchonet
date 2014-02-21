@@ -3,7 +3,6 @@ $(function(){
 
   $review.on('ajax:beforeSend', function(){
     $(this).find('input').attr('disabled', true);
-    console.log('teste');
   });
 
   $review.on('ajax:error', function(){
@@ -11,7 +10,6 @@ $(function(){
   });
 
   $review.on('ajax:success', function(){
-    console.log('lsjdf');
     replaceButton(this, 'icon-ok', '#468847');
   });
 
