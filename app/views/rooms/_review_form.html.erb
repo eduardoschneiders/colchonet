@@ -2,7 +2,9 @@
   <%= form_for room.review_route, remote: true do |f| %>
     <% room.review_points.each do |point| %>
       <%= f.radio_button :points, point %>
-      <%= f.label :points, point, value: point %>
+      <%= f.label :points, value: point do %>
+        <i class="icon-star"></i>
+      <% end %>
     <% end %>
     <%= f.submit %>
   <% end %>
