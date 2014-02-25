@@ -2,7 +2,6 @@ $(function(){
   var $review = $('.review');
 
   $review.bind('ajax:beforeSend', function(){
-    console.log('beforeSend');
     $(this).find('input').attr('disabled', true);
   });
 
@@ -39,7 +38,7 @@ $(function(){
   });
 
   $('.review input').on('change', function(){
-    stars.off('mouseenter').off('mouseleave').off('click');
+    $stars.off('mouseenter').off('mouseleave').off('click');
     $(this).parent('form').submit();
   });
 });
