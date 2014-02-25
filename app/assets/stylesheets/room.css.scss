@@ -35,6 +35,7 @@
 .review .star{
   font-family: "FontAwesome";
   font-size: 18px;
+  &:before { content: "\f00e" }
 }
 
 .review .filled_star{
@@ -68,6 +69,8 @@
   text-shadow: 1px 1px #999;
   cursor: pointer;
   color: #CCC;
+  font-family: "FontAwesome";
+  &:before { content: "\f005" }
 }
 
 .review label.toggled i{
@@ -75,5 +78,5 @@
 }
 
 .review form > input {
-  /*display: none;*/
+  display: none;
 }
