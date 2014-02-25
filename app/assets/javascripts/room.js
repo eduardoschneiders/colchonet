@@ -1,15 +1,16 @@
 $(function(){
   var $review = $('.review');
 
-  $review.on('ajax:beforeSend', function(){
+  $review.bind('ajax:beforeSend', function(){
+    console.log('beforeSend');
     $(this).find('input').attr('disabled', true);
   });
 
-  $review.on('ajax:error', function(){
+  $review.bind('ajax:error', function(){
     replaceButton(this, 'icon-remove', '#B94A48');
   });
 
-  $review.on('ajax:success', function(){
+  $review.bind('ajax:success', function(){
     replaceButton(this, 'icon-ok', '#468847');
   });
 
