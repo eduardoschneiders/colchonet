@@ -22,7 +22,7 @@ $(function(){
 
   function highlightStars(elem){
     elem.parent().children('label').removeClass('toggled');
-    elem.addClass('toggled').prevAll('label').addClass('toggld');
+    elem.addClass('toggled').prevAll('label').addClass('toggled');
   }
 
   highlightStars($('.review input:checked + label'));
