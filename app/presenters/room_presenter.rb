@@ -42,7 +42,7 @@ class RoomPresenter
   end
 
   def total_reviews
-    @room.reviews.size
+    @room.reviews.count
   end
 
   def to_partial_path
