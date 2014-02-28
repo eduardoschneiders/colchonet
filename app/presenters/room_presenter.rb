@@ -13,7 +13,7 @@ class RoomPresenter
   end
 
   def can_review?
-    @context.user_signed_in?
+    @context.user_signed_in? && @context.current_user != @room.user
   end
 
   def show_form?
