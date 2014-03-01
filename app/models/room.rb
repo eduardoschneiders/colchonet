@@ -18,4 +18,8 @@ class Room < ActiveRecord::Base
       scoped
     end
   end
+
+  def to_param
+    "#{id}-#{title.parameterize}"
+  end
 end
