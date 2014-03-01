@@ -12,6 +12,28 @@
   a { font-size: 1.3em;}
 }
 
+#content .search {
+  float: right;
+  margin: 0;
+  position: relative;
+  &:after {
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'FontAwesome';
+    position: absolute;
+    content: "\f002";
+    color: #bbb;
+    top: 0;
+    right: 0;
+  }
+}
+
+.highlight {
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: gold;
+}
+
 #content .review form {
   margin: 0;
 }
