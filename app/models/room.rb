@@ -1,7 +1,14 @@
 class Room < ActiveRecord::Base
+  extend FriendlyId
+
   has_many :reviews, dependent: :destroy
   has_many :revewed_rooms, through: :reviews, source: :room
   belongs_to :user
+
+  validates_presence_of :title
+  validates_presence_of :slug
+
+  friendly_id :title, use: [:slugged, :history]
 
   scope :most_recent, -> {order('created_at DESC')}
 
@@ -17,9 +24,5 @@ class Room < ActiveRecord::Base
     else
       scoped
     end
-  end
-
-  def to_param
-    "#{id}-#{title.parameterize}"
   end
 end

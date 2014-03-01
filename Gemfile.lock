@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: f0a54bc8fd30392b7c5304d8660856e9da7c697b
+  branch: master
+  specs:
+    friendly_id (5.0.3)
+      activerecord (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,6 +139,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 4.0.0)
   font-awesome-rails
+  friendly_id!
   jbuilder (~> 1.2)
   jquery-rails
   pg

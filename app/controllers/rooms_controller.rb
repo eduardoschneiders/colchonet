@@ -16,7 +16,7 @@ class RoomsController < ApplicationController
   # GET /rooms/1
   # GET /rooms/1.json
   def show
-    room_model = Room.find(params[:id])
+    room_model = Room.friendly.find(params[:id])
     @room = RoomPresenter.new(room_model, self)
   end
 
@@ -61,7 +61,7 @@ class RoomsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def current_user_room
-      current_user.rooms.find(params[:id])
+      current_user.rooms.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
