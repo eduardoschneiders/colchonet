@@ -37,8 +37,9 @@ pt-BR:
     review:
       login_to_review: Faça o login para avaliar quartos
       stats:
-          one: '(1 avaliação)'
-          other: '(%{count} avaliações)'
+        zero: 'Nenhuma avaliação'
+        one: '(1 avaliação)'
+        other: '(%{count} avaliações)'
     new:
       title: Cadastro
     edit:
