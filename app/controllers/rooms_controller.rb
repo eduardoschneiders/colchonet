@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  PER_PAGE = 2
   before_action :require_authentication, only: [:new, :edit, :create, :update, :destroy]
 
   # GET /rooms
@@ -6,11 +7,10 @@ class RoomsController < ApplicationController
   def index
     @search_query = params[:q]
 
-    rooms = Room.search(@search_query)
-    @rooms = rooms.most_recent.map do |room|
-      RoomPresenter.new(room, self, false)
-    end
-
+    rooms = Room.search(@search_query).
+      page(params[:page]).
+      per(PER_PAGE)
+    @rooms = RoomCollectionPresenter.new(rooms.most_recent, self)
   end
 
   # GET /rooms/1
