@@ -105,7 +105,7 @@ form{
 
                 @include shadow(rgba(0,0,0,0.1) , 0px , 0px , 8px);
                 &:focus{
-                        border : 1px solid #c9c9c9; 
+                        border : 1px solid #c9c9c9;
                 }
         }
 
@@ -164,4 +164,16 @@ form{
         border: 1px solid $error-text-color;
         @extend .padded_flash;
         backgroud-color: #F2DEDE;
+}
+
+.pagination {
+  margin: 20px 0;
+}
+
+.pagination span {
+  padding: 5px;
+  margin: 0 3px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  @include shadow(#CCC, 0, 3px, 6px);
 }
