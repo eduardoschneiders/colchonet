@@ -8,6 +8,7 @@ class Room < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :slug
 
+  mount_uploader :picture, PirctureUploader
   friendly_id :title, use: [:slugged, :history]
 
   scope :most_recent, -> {order('created_at DESC')}
