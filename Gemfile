@@ -8,6 +8,8 @@ gem 'rails', '4.0.0'
 gem 'pg'
 gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master'
 gem 'kaminari'
+gem 'carrierwave'
+gem 'rmagick'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
