@@ -1,4 +1,5 @@
 class Room < ActiveRecord::Base
+
   extend FriendlyId
 
   has_many :reviews, dependent: :destroy
@@ -8,7 +9,7 @@ class Room < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :slug
 
-  mount_uploader :picture, PirctureUploader
+  mount_uploader :picture, PictureUploader
   friendly_id :title, use: [:slugged, :history]
 
   scope :most_recent, -> {order('created_at DESC')}

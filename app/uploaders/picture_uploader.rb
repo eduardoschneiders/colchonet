@@ -2,8 +2,6 @@
 
 class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
-  include Sprockets::Helpers::RailsHelper
-
   storage :file
 
   def store_dir
