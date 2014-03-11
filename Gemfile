@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'pg'
 gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master'
 gem 'kaminari'
-gem 'carrierwave'
+gem 'carrierwave', '~> 0.10.0'
 gem 'rmagick'
 
 # Use SCSS for stylesheets
@@ -39,7 +39,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.1.5'
 
 gem 'pry', :group => :development
 gem 'pry-remote', :group => :development
