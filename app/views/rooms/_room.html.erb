@@ -17,7 +17,14 @@
           target: :blank %>
     </span>
   </p>
-  <p><%= highlight(room.description || '', @search_query) %></p>
+  <div class="room-description">
+    <%= link_to(
+          image_tag(room.thumb_url),
+          room.picture_url,
+        ) if room.has_picture? %>
+
+    <p><%= highlight(room.description || '', @search_query) %></p>
+  </div>
   <p>
     <% if belongs_to_user(room) %>
       <ul>
@@ -29,5 +36,6 @@
       </ul>
     <% end %>
   </p>
+  <div style="clear: both"></div>
 </article>
 
