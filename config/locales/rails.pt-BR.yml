@@ -1,4 +1,11 @@
 pt-BR:
+  views:
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo"
+      previous: "&lsaquo; Anterior"
+      next: "Próxima &rsaquo;"
+      truncate: "..."
   dialogs:
     destroy: 'Você tem certeza que deseja remover?'
   flash:
@@ -309,5 +316,6 @@ pt-BR:
         description: Descrição
         location: Localização
         title: Título
+        picture: Foto
     errors:
       <<: *errors
