@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/FriendlyId/friendly_id.git
+  remote: https://github.com/norman/friendly_id.git
   revision: f0a54bc8fd30392b7c5304d8660856e9da7c697b
   branch: master
   specs:
