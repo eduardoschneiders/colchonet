@@ -35,6 +35,7 @@ pt-BR:
     index:
       title: 'Quartos disponíveis'
       search_results: 'Resultados da busca'
+      create: 'Cadastro'
     search:
       search_for: 'Busca por...'
     room:
