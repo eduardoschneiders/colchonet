@@ -4,7 +4,7 @@
     <%= link_to highlight(room.title, @search_query), room.route %>
   </h2>
 
-  <%= render partial: 'review', :locals => {:room => room} %>
+  <%= render partial: 'rooms/review', :locals => {:room => room} %>
 
   <span class="created">
     <%= t '.owner_html', owner: room.user.full_name,

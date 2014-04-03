@@ -6,7 +6,7 @@ gem 'rails', '4.0.3'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'pg'
-gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master'
+gem 'friendly_id', :git => 'https://github.com/norman/friendly_id.git', branch: 'master'
 gem 'kaminari'
 gem 'carrierwave', '~> 0.10.0'
 gem 'rmagick'
