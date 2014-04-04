@@ -13,9 +13,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      Signup.confirm_email(@user).deliver
-      redirect_to @user,
-	          notice: 'User created'
+      #Workaround to don't use mail service on heroku
+      #Signup.confirm_email(@user).deliver
+      #redirect_to @user,
+	    #      notice: 'User created'
+      redirect_to confirmation_path({token: @user.confirmation_token})
     else
       render action: :new
     end
